@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+}
+
+.logo h1 {
+    margin-top: 10px;
+}
+
+header img{
+    width: 60px;
+    border-radius: 50px;
+    margin-left: 25px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-right: 35px;
+}
+
+nav ul li{
+margin-left: 70px;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul li a:hover{
+    color: #ffb74d;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+.hero {
+    padding-top: 36px;
+}
+
+.container-home{
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-text h1{
+    margin-bottom: 15px;
+}
+
+.hero-text p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.hero-text ol {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.container-img {
+    text-align: center;
+    flex: 1;
+}
+
+.container-img img{
+    max-width: 300px;
+}
+
+.container {
+    padding: 30px;
+    margin: 50px;
+}
+
+.container h2{
+    margin-top: 10px;
+}
+
+form input, form select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+button{
+    background: #ffb74d;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 20%;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: #ffcc80;
+    transition: 0.3s;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    margin: 50px;
+    padding-bottom: 45px;
+    border-radius: 10px;
+}
+
+.card h1{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    margin-top: 215px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 70px;
+        margin-left: 0;
+    }
+
+    .logo h1 {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px 0 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    nav ul li:hover {
+        transform: none;
+    }
+
+    .container-home {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px;
+    }
+
+    .hero-text ol {
+        text-align: left;
+    }
+
+    .container-img img {
+        max-width: 250px;
+    }
+
+    .container {
+        margin: 30px 20px;
+        padding: 25px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .card {
+        margin: 30px 20px;
+        padding: 30px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo img {
+        margin-left: 65px;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .hero {
+        padding-top: 20px;
+    }
+
+    .container-home {
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-text ol {
+        font-size: 14px;
+    }
+
+    .container-img img {
+        max-width: 200px;
+    }
+
+    form input,
+    form select {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    table th,
+    table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .card h1 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
